@@ -1,15 +1,15 @@
 {
-  "name": "biojs-template", 
+  "name": "biojs-vis-diseaseinfo", 
   "description": "A template for developing biojs2 components", 
   "version": "0.0.1",
-  "homepage": "http://github.com/<username>/<repo>", 
+  "homepage": "http://github.com/xwatkins/biojs-vis-diseaseinfo", 
   "repository": {
     "type": "git",
-    "url": "git://github.com/<username>/<repo>"
+    "url": "git://github.com/xwatkins/biojs-vis-diseaseinfo"
   },
   "author": {
-    "name": "Your name", 
-    "email": "your mail"
+    "name": "Xavier Watkins", 
+    "email": "xavier.watkins@gmail.com"
   },
   "dependencies": {
 
@@ -21,7 +21,7 @@
     "uglify-js": "~2.4.15"
   },
   "keywords": [
-    "biojs, tutorial"
+    "biojs, disease, protein, uniprot"
   ],
   "main": "./index.js", 
   "scripts": {
