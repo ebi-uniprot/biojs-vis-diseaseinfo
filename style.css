@@ -1,0 +1,26 @@
+html {
+	font-family: 'Open Sans', sans-serif;
+	color:#3c4043;
+}
+.report-section {
+	background-color: #ccf8ff;
+	padding: 2em 0;
+}
+.report-section-content {
+	width:960px;
+	margin:0 auto 0 auto;
+}
+.report-section-content h1 {
+	width:400px;
+	margin: 0 auto 1em auto;
+	padding-bottom: 0.5em;
+	text-align: center;
+	border-bottom:1px solid #3c4043;
+}
+.disease-container {
+	margin-bottom: 3em;
+}
+.disease-container h4 {
+	margin-bottom:0;
+	padding-bottom: 0;
+}

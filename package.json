@@ -1,32 +1,54 @@
 {
-  "name": "biojs-vis-diseaseinfo", 
-  "description": "A template for developing biojs2 components", 
+  "name": "biojs-vis-diseaseinfo",
+  "description": "A component for visualising disease information from UniProt data",
   "version": "0.0.1",
-  "homepage": "http://github.com/xwatkins/biojs-vis-diseaseinfo", 
+  "homepage": "http://github.com/xwatkins/biojs-vis-diseaseinfo",
   "repository": {
     "type": "git",
     "url": "git://github.com/xwatkins/biojs-vis-diseaseinfo"
   },
   "author": {
-    "name": "Xavier Watkins", 
+    "name": "Xavier Watkins",
     "email": "xavier.watkins@gmail.com"
   },
   "dependencies": {
-
+    "jquery": "^2.1.1"
   },
-  "devDependencies": { 
-    "browserify": "~4.2.0",
-    "chai": "^1.9.1",
-    "mocha": "~1.20.1",
-    "uglify-js": "~2.4.15"
+  "devDependencies": {
+    "biojs-sniper": "^0.0.7",
+    "browserify": "5.x",
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "gulp-chmod": "^1.1.1",
+    "gulp-gzip": "0.0.8",
+    "gulp-rename": "^1.2.0",
+    "gulp-streamify": "^0.0.5",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "gulp-watch": "^1.0.2",
+    "mkdirp": "^0.5.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^1.0.6"
   },
   "keywords": [
-    "biojs, disease, protein, uniprot"
+    "biojs", "disease", "protein", "uniprot"
   ],
-  "main": "./index.js", 
+  "main": "./index.js",
   "scripts": {
-    "test": "mocha --reporter spec",
-    "build-browser": "browserify browser.js > build/biojs-template.min.js" 
+    "build": "gulp build",
+    "sniper": "biojs-sniper"
+  },
+  "sniper": {
+    "js": [
+      "/build/diseaseinfo.js"
+    ],
+    "css": [
+      "/style.css"
+    ],
+    "snippets": [
+      "snippets"
+    ],
+    "first": "diseaseinfo"
   },
   "license": "Apache 2"
 }
